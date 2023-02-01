@@ -1,0 +1,16 @@
+.controlsContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1em;
+}
+
+.buttons {
+  background: #f1f1f1;
+  color: #151515;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 2px solid #151515;
+  font-weight: bold;
+  font-size: 4vh;
+}
