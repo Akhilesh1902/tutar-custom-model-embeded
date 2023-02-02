@@ -24,7 +24,7 @@ const CanvasWrapper = () => {
           autoRotateSpeed={5}
         />
         {/* <MyBox /> */}
-        <Model url={'./rebookShoe.glb'} />
+        <Model url={'./Heart.glb'} scale={20} />
       </Canvas>
     </div>
   );

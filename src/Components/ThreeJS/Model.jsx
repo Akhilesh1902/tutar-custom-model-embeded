@@ -1,7 +1,7 @@
 import { useGLTF } from '@react-three/drei';
 import React from 'react';
 
-const Model = ({ url }) => {
+const Model = ({ url, scale }) => {
   const model = useGLTF(url);
   model.scene.traverse((obj) => {
     if (obj.isMesh) {
@@ -10,7 +10,7 @@ const Model = ({ url }) => {
     }
   });
 
-  return <primitive object={model.scene} scale={0.7}></primitive>;
+  return <primitive object={model.scene} scale={scale}></primitive>;
 };
 
 export default Model;
