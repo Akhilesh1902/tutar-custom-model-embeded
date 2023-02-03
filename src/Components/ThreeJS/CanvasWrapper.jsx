@@ -15,6 +15,7 @@ const CanvasWrapper = () => {
         <directionalLight intensity={1} position={[10, 10, 20]} castShadow />
         <OrbitControls
           enabled={controls}
+          enableZoom={false}
           maxDistance={5}
           minDistance={3}
           enablePan={false}
