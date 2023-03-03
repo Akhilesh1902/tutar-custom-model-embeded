@@ -1,11 +1,12 @@
 import { useGLTF } from '@react-three/drei';
-import React from 'react';
 
 const Model = ({ url, scale, y }) => {
+  console.log(url);
+
   const model = useGLTF(url);
   model.scene.traverse((obj) => {
     if (obj.isMesh) {
-      console.log(obj);
+      // console.log(obj);
       obj.castShadow = true;
     }
   });
