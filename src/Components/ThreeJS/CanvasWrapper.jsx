@@ -71,7 +71,7 @@ const CanvasWrapper = () => {
           autoRotateSpeed={5}
         />
         {/* <MyBox /> */}
-        <Suspense fallback={<Model url={'./heart.glb'} scale={1} y={-1.5} />}>
+        <Suspense fallback={<Model url={'./Heart.glb'} scale={1} y={-1.5} />}>
           <Model url={blobUrl} scale={currentModelData?.scale} y={-1.5} />
         </Suspense>
       </Canvas>
