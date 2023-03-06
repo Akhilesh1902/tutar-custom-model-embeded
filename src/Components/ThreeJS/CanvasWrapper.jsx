@@ -36,7 +36,8 @@ const CanvasWrapper = () => {
 
   useEffect(() => {
     const fetchModel = async () => {
-      const data = await fetcher(API + 'models/' + modelName);
+      console.log('fetching');
+      const data = await fetcher(API + 'models/get/' + modelName);
       console.log(data);
       console.log(data.modelName.split('/')[1]);
       const curModel = metadata.find(
