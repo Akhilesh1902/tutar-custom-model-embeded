@@ -8,8 +8,8 @@ import { useParams } from 'react-router-dom';
 
 const CanvasWrapper = () => {
   const { controls, setMetadata, metadata } = useAppContext();
-  // const API = 'https://api.infusorydesigns.com/';
-  const API = 'http://localhost:3030/';
+  const API = 'https://api.infusorydesigns.com/';
+  // const API = 'http://localhost:3030/';
   const { modelName } = useParams();
   useEffect(() => {
     const fetchMetaData = async () => {
