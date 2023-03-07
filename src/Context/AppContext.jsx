@@ -4,9 +4,10 @@ const Context = createContext();
 
 export const AppContext = ({ children }) => {
   const [controls, setControls] = useState(true);
+  const [metadata, setMetadata] = useState([]);
 
   return (
-    <Context.Provider value={{ controls, setControls }}>
+    <Context.Provider value={{ controls, setControls, metadata, setMetadata }}>
       {children}
     </Context.Provider>
   );
